@@ -1,0 +1,8 @@
+D:\MyProgramming\C#\Chip8\Chip8\bin\Debug\Chip8.exe.config
+D:\MyProgramming\C#\Chip8\Chip8\bin\Debug\Chip8.exe
+D:\MyProgramming\C#\Chip8\Chip8\bin\Debug\Chip8.pdb
+D:\MyProgramming\C#\Chip8\Chip8\obj\Debug\Chip8.csproj.AssemblyReference.cache
+D:\MyProgramming\C#\Chip8\Chip8\obj\Debug\Chip8.csproj.SuggestedBindingRedirects.cache
+D:\MyProgramming\C#\Chip8\Chip8\obj\Debug\Chip8.csproj.CoreCompileInputs.cache
+D:\MyProgramming\C#\Chip8\Chip8\obj\Debug\Chip8.exe
+D:\MyProgramming\C#\Chip8\Chip8\obj\Debug\Chip8.pdb
