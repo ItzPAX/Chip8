@@ -13,7 +13,7 @@ namespace Chip8
         static void Main(string[] args)
         {
             CPU cpu = new CPU();
-            byte[] program = File.ReadAllBytes("chipquarium.ch8");
+            byte[] program = File.ReadAllBytes("heart_monitor.ch8");
             try
             {
                 cpu.Run(program);
