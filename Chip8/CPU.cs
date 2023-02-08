@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Security;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Chip8
@@ -34,11 +35,12 @@ namespace Chip8
             {
                 for (int x = 0; x < 64; x++)
                 {
-                    if (Display[x + y * 64] == 0) Console.Write("");
-                    else Console.Write("*");
+                    if (Display[x + y * 64] != 0) Console.Write("*");
+                    else Console.Write(" ");
                 }
                 Console.WriteLine();
             }
+            Thread.Sleep(5);
         }
 
         public void Run(byte[] program)
@@ -62,7 +64,7 @@ namespace Chip8
                         switch(least)
                         {
                             case 0xE0:
-                                Display = new byte[32 * 64];
+                                for (int i = 0; i < 64 * 32; i++) Display[i] = 0;
                                 break;
                             case 0xEE:
                                 PC = Stack[SP];
@@ -234,6 +236,8 @@ namespace Chip8
                         throw new Exception($"Unknown opcode: {opcode.ToString("X4")}");
                 }
                 PC += 2;
+
+                ShowDisplay();
             }
         }
     }
